@@ -12,6 +12,8 @@ The webhook receiver runs over plain HTTP on tcp/3000 and must be exposed over H
 
 `https://<your-reverse-proxy-url>/mist-guest-auth`
 
+Mist Webhook configuration is accessible on your Mist dashboard in Organization > Site Configuration > select a site > Webhooks (if you have multiple sites, you need to configure each of them):
+
 ![screenshot](scrnshot-webhook-configuration.png)
 
 ## Running the script with Docker Compose (Recommended!)
