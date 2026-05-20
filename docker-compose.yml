@@ -1,0 +1,11 @@
+services:
+  mist-guest-logger-webhook:
+    build: .
+    image: mist-guest-logger-webhook:latest
+    container_name: mist-guest-logger-webhook
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app-logs:/app/app-logs
+      - ./guest-logs:/app/guest-logs
+    restart: unless-stopped
